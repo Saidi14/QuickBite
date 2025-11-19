@@ -15,7 +15,7 @@ import lombok.*;
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int addressId;
+    private Long addressId;
     private String Line1;
     private String Line2;
     private String City;

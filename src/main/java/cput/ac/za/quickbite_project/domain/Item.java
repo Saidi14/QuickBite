@@ -15,10 +15,11 @@ import lombok.*;
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int itemId;
+    private Long itemId;
 
     private String itemName;
     private String itemDescription;
     private double itemPrice;
     private String imageUrl;
+    private int quantity;
 }

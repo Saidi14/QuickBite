@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.HashMap;
+import java.util.List;
 
 @Entity
 @Getter
@@ -14,8 +15,9 @@ import java.util.HashMap;
 public class ShoppingCart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int shoppingCartId;
-    @ElementCollection
-    HashMap<Item, Integer> Items;
+    private Long shoppingCartId;
+    @OneToMany
+    List<Item> items;
+
 
 }
