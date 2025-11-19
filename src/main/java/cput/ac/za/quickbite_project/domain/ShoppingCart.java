@@ -17,7 +17,7 @@ public class ShoppingCart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long shoppingCartId;
     @OneToMany
-    List<Item> items;
+    List<Item> shoppingCartItems;
 
 
 }
