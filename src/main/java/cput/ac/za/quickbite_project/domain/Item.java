@@ -14,12 +14,13 @@ import lombok.*;
 @ToString
 public class Item {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long itemId;
 
     private String itemName;
     private String itemDescription;
     private double itemPrice;
     private String imageUrl;
+    @Setter
     private int quantity;
 }
