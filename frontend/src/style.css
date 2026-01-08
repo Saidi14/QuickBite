@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header-start*/
+.header{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-evenly;
+}
