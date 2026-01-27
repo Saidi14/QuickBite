@@ -1,5 +1,4 @@
 # QuickBite
-=============
 
 ## 1. What is QuickBite?
 
