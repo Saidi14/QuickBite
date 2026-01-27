@@ -12,5 +12,15 @@
 }
 .navlinks{
     display: flex;
-    justify-content: space-evenly;
 }
+
+/* header-end*/
+
+/* banner image-start*/
+.bannerImage{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* banner image-end*/

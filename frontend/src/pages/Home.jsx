@@ -5,8 +5,12 @@ function Home(){
         <div className="home">
             <Header/>
             {/*Todo: implement promoImage component */}
-            <PromoImg/>
-        
+
+            <img src="/src/assets/bannerImage.jpg" alt="Promo Image" className="bannerImage"></img>
+
+            {/*Todo: Add Banners */}
+            
+            {/*Todo: implement Footer component */}
         </div>
     )
 }
