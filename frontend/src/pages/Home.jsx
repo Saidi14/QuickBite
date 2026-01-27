@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import Header from "../components/Header"
 
 function Home(){
@@ -10,7 +11,7 @@ function Home(){
 
             {/*Todo: Add Banners */}
             
-            {/*Todo: implement Footer component */}
+            <Footer/>
         </div>
     )
 }

@@ -3,10 +3,7 @@ package cput.ac.za.quickbite_project.controller;
 import cput.ac.za.quickbite_project.domain.Item;
 import cput.ac.za.quickbite_project.services.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,4 +22,10 @@ public class ItemController {
     public List<Item> getAllItems(){
         return itemService.findAll();
     }
+
+    @PutMapping("/add")
+    public Item addItem(@RequestBody Item item){
+        return itemService.save(item);
+    }
+
 }
