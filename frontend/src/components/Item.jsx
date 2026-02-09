@@ -1,10 +1,11 @@
-function Item(props) {
+function Item({name, imageUrl, description, price}) {
     return (
         <div className="item">
-            <h2>{props.name}</h2>
-            <img src={props.imageUrl} alt={props.name} className="item-image"></img>
-            <p className="item-description">{props.description}</p>
-            <p className="item-price">${props.price}</p>
+            <h2>{name}</h2>
+            <img src={imageUrl} alt={name} className="item-image"></img>
+            <p className="item-description">{description}</p>
+            <p className="item-price">${price}</p>
         </div>
     )
 }
+export default Item

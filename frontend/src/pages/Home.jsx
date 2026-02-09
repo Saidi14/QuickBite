@@ -1,15 +1,14 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import ItemBanner from "../components/ItemBanner"
 
 function Home(){
     return(
         <div className="home">
             <Header/>
-            {/*Todo: implement promoImage component */}
-
             <img src="/src/assets/bannerImage.jpg" alt="Promo Image" className="bannerImage"></img>
 
-            {/*Todo: Add Banners */}
+            <ItemBanner/>
             
             <Footer/>
         </div>
