@@ -18,7 +18,7 @@ public class ItemController {
         return itemService.findById(id);
     }
 
-    @GetMapping
+    @GetMapping("/getAll")
     public List<Item> getAllItems(){
         return itemService.findAll();
     }
@@ -28,4 +28,10 @@ public class ItemController {
         return itemService.save(item);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public boolean deleteItem(@PathVariable long id){
+        return itemService.deleteById(id);
+    }
+
+    //TODO: Add and test update function
 }
