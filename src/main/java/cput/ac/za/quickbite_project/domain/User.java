@@ -23,6 +23,7 @@ public class User {
     @OneToOne
     private Address address;
     @OneToOne
-    private ShoppingCart shoppingCart;
+    @Builder.Default
+    private ShoppingCart shoppingCart = new ShoppingCart();
 
 }

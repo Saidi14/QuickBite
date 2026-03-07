@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/getById/[id}")
+    @GetMapping("/getById[id}")
     public User getById(@PathVariable long id){
         return userService.findById(id);
     }
@@ -29,8 +29,8 @@ public class UserController {
         return userService.save(user);
     }
 
-    @DeleteMapping("delete/{id}")
-    public boolean delete(@PathVariable long id){
+    @DeleteMapping("deleteById/{id}")
+    public boolean  delete(@PathVariable long id){
         return userService.deleteById(id);
     }
 }
