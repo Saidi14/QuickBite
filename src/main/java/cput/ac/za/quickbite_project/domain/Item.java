@@ -22,6 +22,4 @@ public class Item {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private ItemType itemType;
-    @Setter
-    private int quantity;
 }

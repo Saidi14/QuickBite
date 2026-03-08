@@ -3,19 +3,19 @@ package cput.ac.za.quickbite_project.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.HashMap;
-import java.util.List;
-
 @Entity
 @Getter
-@Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Builder
 @ToString
-public class ShoppingCart {
-    @Id
+public class CartItem {
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long shoppingCartId;
+    @Id
+    private Long cartItemId;
+    @ManyToOne
+    private ShoppingCart cart;
     @OneToOne
-    private User user;
+    private Item item;
+    private int quantity;
 }

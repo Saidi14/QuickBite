@@ -7,8 +7,8 @@ import lombok.*;
 @Getter
 @ToString
 @Builder
-@NoArgsConstructor (access = AccessLevel.PROTECTED)
 @AllArgsConstructor (access = AccessLevel.PRIVATE)
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,8 +22,4 @@ public class User {
     private Role role;
     @OneToOne
     private Address address;
-    @OneToOne
-    @Builder.Default
-    private ShoppingCart shoppingCart = new ShoppingCart();
-
 }

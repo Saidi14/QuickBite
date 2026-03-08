@@ -1,9 +1,9 @@
 package cput.ac.za.quickbite_project.repository;
 
-import cput.ac.za.quickbite_project.domain.ShoppingCart;
+import cput.ac.za.quickbite_project.domain.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-interface ShoppingCartRepository extends JpaRepository<ShoppingCart, Long> {
+public interface CartItemRepository extends JpaRepository<CartItem, Long> {
 }
