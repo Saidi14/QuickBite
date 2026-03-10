@@ -22,7 +22,7 @@ public class InvoiceController {
         return invoiceService.findAll();
     }
 
-    @PutMapping("/add")
+    @PostMapping("/add")
     public Invoice add(@RequestBody Invoice invoice){
         return invoiceService.save(invoice);
     }

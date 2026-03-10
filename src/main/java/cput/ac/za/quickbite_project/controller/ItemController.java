@@ -14,7 +14,7 @@ public class ItemController {
     ItemService itemService;
 
     @GetMapping("/getById/{id}")
-    public Item getItem(@PathVariable long id){
+    public Item getById(@PathVariable long id){
         return itemService.findById(id);
     }
 
@@ -23,7 +23,7 @@ public class ItemController {
         return itemService.findAll();
     }
 
-    @PutMapping("/add")
+    @PostMapping("/add")
     public Item addItem(@RequestBody Item item){
         return itemService.save(item);
     }

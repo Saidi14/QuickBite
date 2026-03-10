@@ -24,7 +24,7 @@ public class UserController {
         return userService.findAll();
     }
 
-    @PutMapping("/add")
+    @PostMapping("/add")
     public User add(@RequestBody User user){
         return userService.save(user);
     }

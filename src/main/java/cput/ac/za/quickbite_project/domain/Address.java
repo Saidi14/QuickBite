@@ -1,9 +1,6 @@
 package cput.ac.za.quickbite_project.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -21,4 +18,7 @@ public class Address {
     private String City;
     private String Province;
     private String Country;
+
+    @OneToOne
+    private User user;
 }
