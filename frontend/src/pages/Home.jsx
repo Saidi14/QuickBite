@@ -8,7 +8,7 @@ function Home(){
             <Header/>
             <img src="/src/assets/bannerImage.jpg" alt="Promo Image" className="bannerImage"></img>
 
-            <ItemBanner/>
+            <ItemBanner itemType={"burger"}/>
             
             <Footer/>
         </div>

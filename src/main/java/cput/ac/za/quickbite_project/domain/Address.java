@@ -13,12 +13,10 @@ public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long addressId;
-    private String Line1;
-    private String Line2;
-    private String City;
-    private String Province;
-    private String Country;
+    private String line1;
+    private String line2;
+    private String city;
+    private String province;
+    private String country;
 
-    @OneToOne
-    private User user;
 }

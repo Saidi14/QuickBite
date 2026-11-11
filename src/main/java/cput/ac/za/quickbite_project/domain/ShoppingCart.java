@@ -3,9 +3,6 @@ package cput.ac.za.quickbite_project.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.HashMap;
-import java.util.List;
-
 @Entity
 @Getter
 @Builder
@@ -16,6 +13,8 @@ public class ShoppingCart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long shoppingCartId;
+
     @OneToOne
-    private User user;
+    @JoinColumn(name = "userId", nullable = false, unique = true)
+    User user;
 }

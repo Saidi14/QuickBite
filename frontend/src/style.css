@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+}
+#root{
+    display: flex;
+}
 /* header-start*/
 .header{
     background-color: bisque;
@@ -24,3 +32,14 @@
     margin-bottom: 10px;
 }
 /* banner image-end*/
+
+/*Login*/
+.login{
+    display: flex;
+    width: 30%;
+    align-self: center;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+}

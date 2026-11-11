@@ -23,7 +23,7 @@ public class CartItemController {
         return cartItemService.findAll();
     }
     
-    @PostMapping("/save")
+    @PostMapping("/add")
     public CartItem save(@RequestBody CartItem cartItem){
         return cartItemService.save(cartItem);
     }

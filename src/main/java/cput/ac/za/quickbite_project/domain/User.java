@@ -18,6 +18,12 @@ public class User {
     private String email;
     private String password;
     private String phone;
+
+    @OneToOne
+    @JoinColumn(name = "addressId", referencedColumnName = "addressId")
+    private Address address;
+
     @Enumerated(EnumType.STRING)
     private Role role;
+
 }
