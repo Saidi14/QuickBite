@@ -15,7 +15,10 @@ public class CartItem {
     private Long cartItemId;
     @ManyToOne
     private ShoppingCart cart;
+
     @OneToOne
+    @JoinColumn(name = "itemId", referencedColumnName = "itemId")
     private Item item;
+
     private int quantity;
 }

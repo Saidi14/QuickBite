@@ -23,9 +23,9 @@ public class ShoppingCartController {
         return shoppingCartService.findAll();
     }
 
-    @PostMapping("/add")
-    public ShoppingCart add(@RequestBody ShoppingCart shoppingCart) {
-        return shoppingCartService.save(shoppingCart);
+    @PostMapping("/add/{id}")
+    public ShoppingCart add(@PathVariable long id) {
+        return shoppingCartService.saveForUser(id);
     }
 
     @DeleteMapping("/delete/{id}")
