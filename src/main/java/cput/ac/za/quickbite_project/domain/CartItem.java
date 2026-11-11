@@ -1,5 +1,6 @@
 package cput.ac.za.quickbite_project.domain;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,12 +14,15 @@ public class CartItem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long cartItemId;
+
     @ManyToOne
+    @JoinColumn(name = "shoppingCartId", nullable = false)
     private ShoppingCart cart;
 
     @OneToOne
-    @JoinColumn(name = "itemId", referencedColumnName = "itemId")
+    @JoinColumn(name = "itemId", nullable = false)
     private Item item;
 
+    @Setter
     private int quantity;
 }

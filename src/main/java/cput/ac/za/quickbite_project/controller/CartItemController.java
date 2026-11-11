@@ -23,9 +23,9 @@ public class CartItemController {
         return cartItemService.findAll();
     }
     
-    @PostMapping("/add")
-    public CartItem save(@RequestBody CartItem cartItem){
-        return cartItemService.save(cartItem);
+    @PostMapping("/add/{itemId}/{cartId}")
+    public CartItem save(@PathVariable Long itemId, @PathVariable Long cartId){
+        return cartItemService.saveItemToCart(itemId, cartId);
     }
     
     @DeleteMapping("/delete{id}")

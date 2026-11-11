@@ -14,7 +14,6 @@ public class ShoppingCartService implements IShoppingCartService{
     ShoppingCartRepository shoppingCartRepository;
     UserRepository userRepository;
 
-    @Autowired
     public ShoppingCartService(ShoppingCartRepository shoppingCartRepository, UserRepository userRepository) {
         this.shoppingCartRepository = shoppingCartRepository;
         this.userRepository = userRepository;
