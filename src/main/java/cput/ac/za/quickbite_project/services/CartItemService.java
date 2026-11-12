@@ -54,6 +54,7 @@ public class CartItemService implements ICartItemService{
     public CartItem setQuantity(Long id, int quantity ){
         CartItem cartItem = cartItemRepository.findById(id).orElseThrow(() -> new RuntimeException("CartItem doesn't exist"));
         cartItem.setQuantity(quantity);
+        return cartItemRepository.save( cartItem);
     }
 
     @Override
