@@ -1,45 +1,22 @@
 *{
-    padding: 0;
     margin: 0;
 }
 
-body{
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-}
-#root{
-    display: flex;
-}
-/* header-start*/
+/*header*/
 .header{
-    background-color: bisque;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .navlinks{
     display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
-
-/* header-end*/
-
-/* banner image-start*/
-.bannerImage{
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+/*Item*/
+.item{
+    max-height: 10%;
 }
-/* banner image-end*/
-
-/*Login*/
-.login{
-    display: flex;
-    width: 30%;
-    align-self: center;
-}
-.login form{
-    display: flex;
-    flex-direction: column;
+.item img{
+    max-height: 80px;
 }

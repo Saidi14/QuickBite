@@ -1,14 +1,14 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import ItemBanner from "../components/ItemBanner"
+import Item from "../components/Item"
 
 function Home(){
     return(
         <div className="home">
             <Header/>
-            <img src="/src/assets/bannerImage.jpg" alt="Promo Image" className="bannerImage"></img>
 
-            <ItemBanner itemType={"burger"}/>
+            <Item id/>
             
             <Footer/>
         </div>

@@ -5,5 +5,5 @@ public enum ItemType {
     Wrap,
     Side,
     Drink,
-    Pizza
+    Pizza,
 }

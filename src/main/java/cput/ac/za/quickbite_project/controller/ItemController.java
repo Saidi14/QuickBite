@@ -13,6 +13,7 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
+    @CrossOrigin(origins = "http://localhost:5173/")
     @GetMapping("/getById/{id}")
     public Item getById(@PathVariable long id){
         return itemService.findById(id);
